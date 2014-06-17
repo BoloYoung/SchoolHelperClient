@@ -178,6 +178,7 @@
 		CD14C2F4194F74A3000A72B0 /* SchoolHelper */ = {
 			isa = PBXGroup;
 			children = (
+				CD14C35F194FDD09000A72B0 /* MianView */,
 				CD14C2FD194F74A3000A72B0 /* AppDelegate.h */,
 				CD14C2FE194F74A3000A72B0 /* AppDelegate.m */,
 				CD14C300194F74A3000A72B0 /* Main.storyboard */,
@@ -273,6 +274,13 @@
 				CD14C332194FB50E000A72B0 /* ASIHttpRequest */,
 			);
 			name = lib;
+			sourceTree = "<group>";
+		};
+		CD14C35F194FDD09000A72B0 /* MianView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MianView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
