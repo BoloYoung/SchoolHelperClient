@@ -36,6 +36,10 @@
 		CD14C34F194FB50E000A72B0 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = CD14C343194FB50E000A72B0 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CD14C350194FB50E000A72B0 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CD14C345194FB50E000A72B0 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CD14C351194FB50E000A72B0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CD14C348194FB50E000A72B0 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CD14C355194FB9E5000A72B0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CD14C354194FB9E5000A72B0 /* MBProgressHUD.m */; };
+		CD14C358194FB9FD000A72B0 /* LSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CD14C357194FB9FD000A72B0 /* LSUser.m */; };
+		CD14C35B194FBA0A000A72B0 /* RequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD14C35A194FBA0A000A72B0 /* RequestController.m */; };
+		CD14C35E194FBA1A000A72B0 /* URLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CD14C35D194FBA1A000A72B0 /* URLObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +102,14 @@
 		CD14C346194FB50E000A72B0 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
 		CD14C347194FB50E000A72B0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		CD14C348194FB50E000A72B0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CD14C353194FB9E5000A72B0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		CD14C354194FB9E5000A72B0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		CD14C356194FB9FD000A72B0 /* LSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUser.h; sourceTree = "<group>"; };
+		CD14C357194FB9FD000A72B0 /* LSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSUser.m; sourceTree = "<group>"; };
+		CD14C359194FBA0A000A72B0 /* RequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestController.h; sourceTree = "<group>"; };
+		CD14C35A194FBA0A000A72B0 /* RequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestController.m; sourceTree = "<group>"; };
+		CD14C35C194FBA1A000A72B0 /* URLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLObject.h; sourceTree = "<group>"; };
+		CD14C35D194FBA1A000A72B0 /* URLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +143,7 @@
 		CD14C2E2194F74A3000A72B0 = {
 			isa = PBXGroup;
 			children = (
-				CD14C332194FB50E000A72B0 /* ASIHttpRequest */,
-				CD14C32E194FB432000A72B0 /* JSONKit */,
+				CD14C352194FB983000A72B0 /* lib */,
 				CD14C2F4194F74A3000A72B0 /* SchoolHelper */,
 				CD14C316194F74A3000A72B0 /* SchoolHelperTests */,
 				CD14C2ED194F74A3000A72B0 /* Frameworks */,
@@ -247,6 +258,23 @@
 			path = ASIHttpRequest;
 			sourceTree = "<group>";
 		};
+		CD14C352194FB983000A72B0 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CD14C35C194FBA1A000A72B0 /* URLObject.h */,
+				CD14C35D194FBA1A000A72B0 /* URLObject.m */,
+				CD14C359194FBA0A000A72B0 /* RequestController.h */,
+				CD14C35A194FBA0A000A72B0 /* RequestController.m */,
+				CD14C356194FB9FD000A72B0 /* LSUser.h */,
+				CD14C357194FB9FD000A72B0 /* LSUser.m */,
+				CD14C353194FB9E5000A72B0 /* MBProgressHUD.h */,
+				CD14C354194FB9E5000A72B0 /* MBProgressHUD.m */,
+				CD14C32E194FB432000A72B0 /* JSONKit */,
+				CD14C332194FB50E000A72B0 /* ASIHttpRequest */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -345,18 +373,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD14C308194F74A3000A72B0 /* SecondViewController.m in Sources */,
+				CD14C358194FB9FD000A72B0 /* LSUser.m in Sources */,
 				CD14C349194FB50E000A72B0 /* ASIAuthenticationDialog.m in Sources */,
 				CD14C34A194FB50E000A72B0 /* ASIDataCompressor.m in Sources */,
 				CD14C2FF194F74A3000A72B0 /* AppDelegate.m in Sources */,
 				CD14C305194F74A3000A72B0 /* FirstViewController.m in Sources */,
 				CD14C34E194FB50E000A72B0 /* ASIHTTPRequest.m in Sources */,
 				CD14C34D194FB50E000A72B0 /* ASIFormDataRequest.m in Sources */,
+				CD14C355194FB9E5000A72B0 /* MBProgressHUD.m in Sources */,
 				CD14C34C194FB50E000A72B0 /* ASIDownloadCache.m in Sources */,
+				CD14C35B194FBA0A000A72B0 /* RequestController.m in Sources */,
 				CD14C34F194FB50E000A72B0 /* ASIInputStream.m in Sources */,
 				CD14C34B194FB50E000A72B0 /* ASIDataDecompressor.m in Sources */,
 				CD14C351194FB50E000A72B0 /* Reachability.m in Sources */,
 				CD14C350194FB50E000A72B0 /* ASINetworkQueue.m in Sources */,
 				CD14C2FB194F74A3000A72B0 /* main.m in Sources */,
+				CD14C35E194FBA1A000A72B0 /* URLObject.m in Sources */,
 				CD14C331194FB432000A72B0 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
